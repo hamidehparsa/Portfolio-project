@@ -4,8 +4,15 @@
   --heading-font: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
 }
+body {
+  font-family: var(--default-font);
+}
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--heading-font);
 }
 
@@ -30,6 +37,7 @@ p {
 }
 
 .hero h2 {
+  font-family: var(--default-font);
   font-weight: 400;
   font-size: 24px;
   color: #272142;
@@ -43,4 +51,40 @@ p {
   background: var(--branding-color);
   border-radius: 4px;
   padding: 18px 30px;
+}
+
+.projects h2 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.projects p {
+  color: #272142b2;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 30px;
+}
+
+.btn-branding-outline {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--branding-color);
+  padding: 18px 30px;
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+}
+
+.project-description {
+  padding: 100px 40px;
+}
+
+@media (max-width: 500px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }

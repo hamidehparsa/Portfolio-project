@@ -75,6 +75,10 @@ p {
   padding: 18px 30px;
 }
 
+.projects {
+  margin: 0 auto;
+}
+
 .projects h2 {
   font-size: 64px;
   font-weight: 700;
@@ -145,6 +149,33 @@ nav a:hover {
 .container {
   margin-left: 40px;
 }
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 0 30px;
+}
+
+footer .contact-box p {
+  text-align: left;
+}
+
+footer p {
+  text-align: center;
+}
+
+.fa-brands {
+  margin-left: 20px;
+  background-color: var(--secondary-color);
+  font-size: 20px;
+  color: var(--branding-color);
+  border: 50%;
+}
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -157,5 +188,13 @@ nav a:hover {
 
   nav a {
     font-size: 14px;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-box p {
+    margin-bottom: 5px;
   }
 }
